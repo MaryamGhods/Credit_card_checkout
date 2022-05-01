@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Credit Card Checkout</title>
+</head>
+<body>
+    <div class="modal">
+        <div class="wrapper">
+            <div class="frame">
+                <div class="left-section">
+                    <div class="content">
+                        <div class="details-title">
+                            <h4>Details</h4>
+                        </div>
+                        <!-- Slider main container -->
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                            <!-- Slides -->
+                                <div class="swiper-slide"><img class="image" src="images/image1.jpg" alt="image1"></div>
+                                <div class="swiper-slide"><img class="image" src="images/image2.jpg" alt="image2"></div>
+                                <div class="swiper-slide"><img class="image" src="images/image3.jpg" alt="image3"></div>
+                                <div class="swiper-slide"><img class="image" src="images/image4.jpg" alt="image4"></div>
+                            </div>
+                            <div class="navigation">
+                                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+                                    <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span>
+                                    <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+                                    <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
+                                    <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span>
+                                </div>
+                            </div>
+                        </div>
+  
+                        <div class="details-content">
+                            <p class="detail-p1">The Decade Collection</p>
+                            <p class="detail-p2">Defiant Black-Red</p>
+                            <p class="detail-p3">Quantity: 1</p>
+                            <p class="detail-p4">Total</p>
+                            <p class="detail-p5"><strong>$349.95</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-section">
+                    <div class="content">
+                        <div class="checkout-title">
+                            <h4>Checkout</h4>
+                        </div>
+                        <div class="checkout-content">
+                            <form action="/" method="post">
+                                <div class="input-wrapper">
+                                    <label for="Payment Method">Payment Method</label>
+                                    <select name="Payment Method" id="" required>
+                                        <option value="0">Visa</option>
+                                        <option value="1">Mastercard</option>
+                                        <option value="2">American Express</option>
+                                    </select>
+                                </div>
+                                <div class="input-wrapper">
+                                    <label for="Cardholder's name">Cardholder's name</label>
+                                    <input type="text" name="Cardholder's name" placeholder="Name" required>
+                                </div>
+                                <div class="input-wrapper">
+                                    <label for="Card Number">Card Number</label>
+                                    <input type="text" name="Card Number" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+                                </div>
+    
+                                <div class="double-input">
+                                    <div class="input-wrapper">
+                                        <label for="Expiration Date">Expiration Date</label>
+                                        <input type="number" name="Expiration Date" placeholder="Month" required>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <label for="" style="visibility: hidden;">.</label>
+                                        <input type="number" name="Expiration Date" placeholder="Year" required>
+                                    </div>
+                                </div>
+    
+                                <div class="double-input">
+                                    <div class="input-wrapper">
+                                        <label for="Security Code">Security Code</label>
+                                        <input type="number" name="Security Code" placeholder="Code" required>
+                                    </div>
+                                </div>
+                                    
+                                <button type="submit" class="submit-btn"><span>CONFIRM ORDER</span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
